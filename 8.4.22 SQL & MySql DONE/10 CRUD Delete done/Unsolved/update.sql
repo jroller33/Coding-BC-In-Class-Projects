@@ -1,3 +1,3 @@
 UPDATE fiction
-SET name = "Candide"
+SET name = "Candide" -- no commas
 WHERE id = 2;

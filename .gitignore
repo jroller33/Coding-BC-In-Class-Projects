@@ -1,0 +1,11 @@
+node_modules
+package-lock.json
+.vscode
+.DS_Store
+notes.txt
+.env
+.env.EXAMPLE
+notes.txt
+0
+README.md
+
