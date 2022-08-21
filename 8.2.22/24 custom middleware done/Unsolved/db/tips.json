@@ -1,0 +1,50 @@
+[
+    {
+        "username": "j",
+        "topic": "UX",
+        "tip": "Don't use comic sans",
+        "tip_id": "37t8"
+    },
+    {
+        "username": "Sarah",
+        "topic": "UI",
+        "tip": "Make your application accessible by adding alt properties to elements",
+        "tip_id": "701e"
+    },
+    {
+        "username": "CoolGuy1",
+        "tip": "Don't use three different fonts on the same page",
+        "topic": "UX",
+        "tip_id": "0a46"
+    },
+    {
+        "username": "test",
+        "tip": "test",
+        "topic": "UX",
+        "tip_id": "05df"
+    },
+    {
+        "username": "Sarah",
+        "tip": "Make your application accessible by adding alt properties ",
+        "topic": "UI",
+        "tip_id": "8d12"
+    },
+    {
+        "username": "John",
+        "tip": "Make your application accessible by adding alt properties ",
+        "topic": "UI",
+        "tip_id": "645d"
+    },
+    {
+        "username": "Deez",
+        "tip": "Make your application accessible by adding alt properties ",
+        "topic": "UI",
+        "tip_id": "ce1b"
+    },
+    {
+        "username": "Deez",
+        "tip": "Make your application accessible by adding alt properties ",
+        "topic": "UI",
+        "tip_id": "cdd7"
+    }
+]

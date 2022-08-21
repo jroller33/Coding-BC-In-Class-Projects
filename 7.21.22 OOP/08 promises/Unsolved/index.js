@@ -1,0 +1,46 @@
+//                ***************** done
+
+// Prompt the user to enter what they are currently doing
+const userInput = process.argv[2];
+console.log('Current user activity:', userInput);
+
+// If the user does not enter anything, return an error message
+if (!userInput) {
+  console.error(
+    '\nPlease enter your current activity\nUsage: `node index.js <activity>`'
+  );
+  process.exit();
+}
+
+// If the user enters anything other than the word 'coding', set 'studentDistracted' to 'true'
+const studentDistracted = userInput !== 'coding';
+
+// done: Refactor the following to use promises
+// const practiceCoding = (cb, errCb) => {
+//   if (studentDistracted) {
+//     errCb({
+//       issue: 'Distracted',
+//       message: 'Coding stopped',
+//     });
+//   } else {
+//     cb('We are coding!');
+//   }
+// };
+const practiceCoding = () =>
+ new Promise((resolve, reject) => {
+  if (studentDistracted) {
+    reject(new Error('Coding stopped'));
+  }
+  resolve('We are coding');
+ }
+ 
+ )
+
+const callback = (message) => console.log(message);
+const errorCallback = (message) => console.log(message);
+
+// done: Refactor to call 'practiceCoding()' and chain a 'then()' to log "We are coding in promises!" in the console. Chain a 'catch()' to log "Promise rejected: " and the error
+// practiceCoding(cb, errCb);
+practiceCoding()
+ .then(() => console.log('we are coding in promises'))
+ .catch((err) => console.log('promise rejected: ', err));

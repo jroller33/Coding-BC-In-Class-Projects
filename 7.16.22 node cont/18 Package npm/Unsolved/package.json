@@ -1,0 +1,14 @@
+{
+  "name": "unsolved",
+  "version": "1.0.0",
+  "description": "* As a developer, I want to be able to keep track of dependencies using `npm`.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
