@@ -3,7 +3,7 @@ const { User } = require('../../models');
 
 router.post('/login', async (req, res) => {
   try {
-    // TODO: Add a comment describing the functionality of this expression
+    // find the user who matches the posted email
     const userData = await User.findOne({ where: { email: req.body.email } });
 
     if (!userData) {
@@ -13,7 +13,7 @@ router.post('/login', async (req, res) => {
       return;
     }
 
-    // TODO: Add a comment describing the functionality of this expression
+    // verify the posted password w the password store in the db
     const validPassword = await userData.checkPassword(req.body.password);
 
     if (!validPassword) {
@@ -23,7 +23,7 @@ router.post('/login', async (req, res) => {
       return;
     }
 
-    // TODO: Add a comment describing the functionality of this method
+    // create session variables bases on what user is logged in
     req.session.save(() => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
@@ -38,7 +38,7 @@ router.post('/login', async (req, res) => {
 
 router.post('/logout', (req, res) => {
   if (req.session.logged_in) {
-    // TODO: Add a comment describing the functionality of this method
+    // remove the session variables
     req.session.destroy(() => {
       res.status(204).end();
     });

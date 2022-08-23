@@ -1,13 +1,13 @@
 const loginFormHandler = async (event) => {
-  // TODO: Add a comment describing the functionality of this statement
+  // stop the browser from submitting the form so you can do it with javascript
   event.preventDefault();
 
-  // TODO: Add a comment describing the functionality of these expressions
+  // gather the data from the form elements on the page
   const email = document.querySelector('#email-login').value.trim();
   const password = document.querySelector('#password-login').value.trim();
 
   if (email && password) {
-    // TODO: Add a comment describing the functionality of this expression
+    // send email and pw to server
     const response = await fetch('/api/users/login', {
       method: 'POST',
       body: JSON.stringify({ email, password }),
