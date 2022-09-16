@@ -1,3 +1,5 @@
+// all tests passed
+
 const binarySearch = require('../index');
 
 test('binarySearch is a defined function', () => {
